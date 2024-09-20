@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Algorithm Visualizer</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <section class="navbar_section">
+      <div class="container maxm_width">
+        <div class="navigation">
+          <div class="nav">
+            <a href="#" class="logo">
+              <div class="icon">
+                <img
+                  src="image/icon/Algo visual light.png"
+                  alt="algorithm Visualizer"
+                />
+              </div>
+              <h1 class="title">Algo Visualizer</h1>
+            </a>
+            <div class="nav_list">
+              <div class="nav_item">
+                <a href="#"> <span>Algorithm</span></a>
+              </div>
+              <div class="nav_item">
+                <a href="#"> <span>Animation</span></a>
+              </div>
+              <div class="nav_item">
+                <a href="#"> <span>Doc</span></a>
+              </div>
+              <div class="nav_item">
+                <a href="#"> <span>Blog</span></a>
+              </div>
+              <div class="nav_item">
+                <a href="#"> <span>Projects</span></a>
+              </div>
+              <div class="nav_item">
+                <a href="#"> <span>FAQ</span></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="search_box">
+            <form href="#">
+              <input
+                class="search_input"
+                placeholder="Search Algorithm...."
+                type="text"
+              />
+              <button type="submit" class="icon">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                >
+                  <path
+                    d="M11 2C15.968 2 20 6.032 20 11C20 15.968 15.968 20 11 20C6.032 20 2 15.968 2 11C2 6.032 6.032 2 11 2ZM11 18C14.8675 18 18 14.8675 18 11C18 7.1325 14.8675 4 11 4C7.1325 4 4 7.1325 4 11C4 14.8675 7.1325 18 11 18ZM19.4853 18.0711L22.3137 20.8995L20.8995 22.3137L18.0711 19.4853L19.4853 18.0711Z"
+                  ></path>
+                </svg>
+              </button>
+            </form>
+          </div>
+          <div class="menu">
+            <div class="icon">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 72 72"
+                width="512px"
+                height="512px"
+                fill="currentColor"
+              >
+                <path
+                  d="M56 48c2.209 0 4 1.791 4 4 0 2.209-1.791 4-4 4-1.202 0-38.798 0-40 0-2.209 0-4-1.791-4-4 0-2.209 1.791-4 4-4C17.202 48 54.798 48 56 48zM56 32c2.209 0 4 1.791 4 4 0 2.209-1.791 4-4 4-1.202 0-38.798 0-40 0-2.209 0-4-1.791-4-4 0-2.209 1.791-4 4-4C17.202 32 54.798 32 56 32zM56 16c2.209 0 4 1.791 4 4 0 2.209-1.791 4-4 4-1.202 0-38.798 0-40 0-2.209 0-4-1.791-4-4 0-2.209 1.791-4 4-4C17.202 16 54.798 16 56 16z"
+                />
+              </svg>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="main">
+      <div class="container">
+        <div class="wrapper">
+          <div class="topic">
+            <div class="heading">
+              <h1 class="title">Algorithm Visualizer</h1>
+            </div>
+            <div class="content">
+              <p class="text">Select Algorithm</p>
+
+              <form action="aSearchAlgorithm.html">
+                <select class="select_algo" name="algorithm" id="algoVisu">
+                  <option value=""><a href="#aStar"></a></option>
+
+                  <option value="aStar Search">
+                    <a href="#aStar">A* Search</a>
+                  </option>
+                  <option value="Graph"><a href="#aStar">Graph</a></option>
+                  <option value="Searching">
+                    <a href="#aStar">Searching</a>
+                  </option>
+                  <option value="Sorting"><a href="#aStar">Sorting</a></option>
+                  <option value="Tree"><a href="#aStar">Tree</a></option>
+                </select>
+
+                <button class="button" type="submit">submit</button>
+              </form>
+            </div>
+          </div>
+          <!-- this description can be change dynamiclly accoring to the selected algorithm -->
+          <div class="thoery">
+            <div class="description">
+              <div class="title">
+                <h1>A* Algorithm</h1>
+              </div>
+
+              <div class="paragraph">
+                A* (pronounced "A-star") is a powerful graph traversal and
+                pathfinding algorithm widely used in artificial intelligence and
+                computer science. It is mainly used to find the shortest path
+                between two nodes in a graph, given the estimated cost of
+                getting from the current node to the destination node. The main
+                advantage of the algorithm is its ability to provide an optimal
+                path by exploring the graph in a more informed way compared to
+                traditional search algorithms such as Dijkstra's algorithm.
+              </div>
+            </div>
+
+            <div class="complexity">
+              <div class="title">
+                <h1>Complexity of A* Algorithm</h1>
+              </div>
+
+              <div class="complex">
+                <table class="table">
+                  <tr>
+                    <td rowspan="3">Time Complexity</td>
+                    <td>Best Case</td>
+                    <td>O(d)</td>
+                  </tr>
+
+                  <tr>
+                    <td>Average Case</td>
+                    <td>O(b^d)</td>
+                  </tr>
+
+                  <tr>
+                    <td>Worst Case</td>
+                    <td>O(b^d)</td>
+                  </tr>
+
+                  <tr>
+                    <td>Space complexity</td>
+                    <td colspan="2">O(b^d)</td>
+                  </tr>
+                </table>
+              </div>
+            </div>
+
+            <div class="description">
+              <div class="title">
+                <h1>Graph</h1>
+              </div>
+
+              <div class="paragraph">
+                A* (pronounced "A-star") is a powerful graph traversal and
+                pathfinding algorithm widely used in artificial intelligence and
+                computer science. It is mainly used to find the shortest path
+                between two nodes in a graph, given the estimated cost of
+                getting from the current node to the destination node. The main
+                advantage of the algorithm is its ability to provide an optimal
+                path by exploring the graph in a more informed way compared to
+                traditional search algorithms such as Dijkstra's algorithm.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>

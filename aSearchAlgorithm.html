@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>A* Search Visualization</title>
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <section class="navbar_section">
+      <div class="container maxm_width">
+        <div class="navigation">
+          <div class="nav">
+            <a href="#" class="logo">
+              <div class="icon">
+                <img
+                  src="image/icon/Algo visual light.png"
+                  alt="algorithm Visualizer"
+                />
+              </div>
+              <h1 class="title">Algo Visualizer</h1>
+            </a>
+            <div class="nav_list">
+              <div class="nav_item">
+                <a href="#"> <span>Algorithm</span></a>
+              </div>
+              <div class="nav_item">
+                <a href="#"> <span>Animation</span></a>
+              </div>
+              <div class="nav_item">
+                <a href="#"> <span>Doc</span></a>
+              </div>
+              <div class="nav_item">
+                <a href="#"> <span>Blog</span></a>
+              </div>
+              <div class="nav_item">
+                <a href="#"> <span>Projects</span></a>
+              </div>
+              <div class="nav_item">
+                <a href="#"> <span>FAQ</span></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="search_box">
+            <form>
+              <input
+                class="search_input"
+                placeholder="Search Algorithm...."
+                type="text"
+              />
+              <button type="submit" class="icon">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                >
+                  <path
+                    d="M11 2C15.968 2 20 6.032 20 11C20 15.968 15.968 20 11 20C6.032 20 2 15.968 2 11C2 6.032 6.032 2 11 2ZM11 18C14.8675 18 18 14.8675 18 11C18 7.1325 14.8675 4 11 4C7.1325 4 4 7.1325 4 11C4 14.8675 7.1325 18 11 18ZM19.4853 18.0711L22.3137 20.8995L20.8995 22.3137L18.0711 19.4853L19.4853 18.0711Z"
+                  ></path>
+                </svg>
+              </button>
+            </form>
+          </div>
+          <div class="menu">
+            <div class="icon">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 72 72"
+                width="512px"
+                height="512px"
+                fill="currentColor"
+              >
+                <path
+                  d="M56 48c2.209 0 4 1.791 4 4 0 2.209-1.791 4-4 4-1.202 0-38.798 0-40 0-2.209 0-4-1.791-4-4 0-2.209 1.791-4 4-4C17.202 48 54.798 48 56 48zM56 32c2.209 0 4 1.791 4 4 0 2.209-1.791 4-4 4-1.202 0-38.798 0-40 0-2.209 0-4-1.791-4-4 0-2.209 1.791-4 4-4C17.202 32 54.798 32 56 32zM56 16c2.209 0 4 1.791 4 4 0 2.209-1.791 4-4 4-1.202 0-38.798 0-40 0-2.209 0-4-1.791-4-4 0-2.209 1.791-4 4-4C17.202 16 54.798 16 56 16z"
+                />
+              </svg>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="main">
+      <div class="container">
+        <div class="wrapper">
+          <div class="topic">
+            <div class="heading">
+              <h1 class="title fit">A* Algorithm</h1>
+            </div>
+
+            <div class="content">
+              <p class="text">Play with your Algorithm</p>
+            </div>
+          </div>
+
+          <div class="thoery">
+            <div class="control-buttons">
+              <button
+                class="outline-btn"
+                id="add-edge-enable"
+                onclick="addEdges()"
+              >
+                Add Edges
+              </button>
+
+              <button
+                class="outline-btn reset-btn"
+                onclick="resetDrawingArea()"
+                disabled
+              >
+                Clear Graph
+              </button>
+
+              <button
+                class="outline-btn"
+                id="visualize-algorithm-btn"
+                onclick="shortestpathfinding()"
+                disabled
+              >
+                Visualize Algorithm
+              </button>
+
+              <input
+                type="text"
+                id="source-node"
+                placeholder="Enter Source Node"
+              />
+
+              <input
+                type="text"
+                id="destination-node"
+                placeholder="Enter Destination Node"
+              />
+
+              <button class="outline-btn" onclick="setSourceAndDestination()">
+                OK
+              </button>
+
+              <input type="text" id="h-value" placeholder="Enter h(n)" />
+
+              <button
+                class="outline-btn"
+                id="submit-btn"
+                onclick="saveHeuristic()"
+                disabled
+              >
+                Save
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="main">
+      <div class="container">
+        <div class="wrap">
+          <div class="input_visualizer">
+            <div class="lower-section">
+              <svg
+                id="drawing-area"
+                width="800"
+                height="600"
+                xmlns="http://www.w3.org/2000/svg"
+                style="border: 1px solid black"
+              ></svg>
+            </div>
+          </div>
+
+          <div class="output_result">
+            <div class="path" id="path">Result</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="script.js"></script>
+  </body>
+</html>
