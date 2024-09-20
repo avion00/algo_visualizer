@@ -1,0 +1,22 @@
+what is algorithm visualizer?
+Algorithm visualizer is a tool that helps you understand how algorithms work by visualizing the steps involved in
+the algorithm. It is a graphical representation of the algorithm's execution, making it easier to comprehend
+and debug the code.
+
+how can i use visualizer algorithm
+You can use an algorithm visualizer in several ways:
+
+1.  **Step-by-Step Execution**: The visualizer allows you to execute the algorithm step
+by step, making it easier to understand the flow of the algorithm.
+2.  **Pause and Resume**: You can pause the execution of the algorithm at any point and
+resume it when you are ready.
+3.  **Step Back**: You can step back to a previous step and see how the algorithm
+changed.
+4.  **Visualize Data**: The visualizer can display the data being processed by the algorithm
+5.  **Compare Algorithms**: You can compare the execution of different algorithms on the same
+data.
+6.  **Debugging**: The visualizer can help you debug your code by allowing you to
+see the execution of the algorithm and identify any errors.
+7.  **Learning**: The visualizer can be a great tool for learning algorithms, as it
+makes it easier to understand how they work.
+
