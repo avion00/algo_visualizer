@@ -20,3 +20,25 @@ see the execution of the algorithm and identify any errors.
 7.  **Learning**: The visualizer can be a great tool for learning algorithms, as it
 makes it easier to understand how they work.
 
+
+how can i perform visual algorithm with animate js?
+You can use Animate JS to create a visual representation of an algorithm. Here's a general outline
+of how you can do it:
+1.  **Choose an Algorithm**: Select the algorithm you want to visualize.
+2.  **Break Down the Algorithm**: Break down the algorithm into individual steps.
+
+3.  **Create a Visual Representation**: Use Animate JS to create a visual representation of each
+step. You can use HTML, CSS, and JavaScript to create the visual elements.
+4.  **Animate the Steps**: Use Animate JS to animate the steps, making it easier
+to see how the algorithm works.
+5.  **Add Interactivity**: Add interactivity to the visual representation, allowing the user to
+pause, resume, and step back through the algorithm.
+6.  **Use Animate JS Functions**: Use Animate JS functions such as `animate()
+` to animate the visual elements.
+7.  **Use CSS Transitions**: Use CSS transitions to create smooth animations.
+8.  **Use JavaScript Events**: Use JavaScript events such as `mouseover` and `mouseout`
+to add interactivity to the visual representation.
+9.  **Use Animate JS Plugins**: Use Animate JS plugins such as `animate.css
+` to add animations to the visual elements.
+
+
